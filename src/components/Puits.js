@@ -58,7 +58,6 @@ class Puits extends Component {
 
     render() {
         let i = 0;
-        const arr = this.state.infos.reverse();
         if (typeof this.state.puits === 'number') {
         return (
         <div>
@@ -74,7 +73,7 @@ class Puits extends Component {
             <input onKeyUp={this.TimesKeyUp} className='input-times' type='number' defaultValue="1" placeholder='exemple: 1' />
             <button onClick={this.ChangePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
-                {arr.map(el => {
+                {this.state.infos.reverse().map(el => {
                     i = i + 1
                     return <h2 key={i}>{el}</h2>
                 })}
