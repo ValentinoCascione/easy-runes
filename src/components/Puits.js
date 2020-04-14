@@ -18,15 +18,16 @@ class Puits extends Component {
         this.setState({ puits: parseInt(inputPuits.value) })
     }
 
-    keyPressedPuits = (event) => {
-        if (event.key === "Enter") {
-            this.myPuits()
-          }
-    }
-
     RuneKeyUp = () => {
+        const searchRunes = document.querySelector('.search-runes')
         const inputRune = document.querySelector('.input-rune')
         this.setState({ rune: inputRune.value.toLowerCase() })
+        console.log(inputRune.value)
+        if (inputRune.value === '') {
+            searchRunes.style.display = 'none'
+        } else {
+            searchRunes.style.display = ''
+        }
     }
 
     TimesKeyUp = () => {
@@ -36,24 +37,28 @@ class Puits extends Component {
 
     ChangePuits = () => {
         RunesData.map(el => {
-            if (el.name === this.state.rune) {
+            if (el.name === this.state.rune && this.state.times > 0) {
                 this.setState({ puits: this.state.puits - (el.weight * this.state.times) })
                 this.state.infos.push(<Informations runes={this.state.rune} times={this.state.times}/>)
             }
         })
     }
 
-    addRuneWord = () => {
+    addRuneWord = (event) => {
+        const searchRunes = document.querySelector('.search-runes')
+        this.setState({ 
+            rune: event.target.innerHTML.toLowerCase(),
+        }, this.newInputValue )
+        searchRunes.style.display = 'none'
+    }
+
+    newInputValue = () => {
         const inputRune = document.querySelector('.input-rune')
-        const searchRunes = document.querySelectorAll('.search-runes p')
-        searchRunes.forEach(e => {
-            e.addEventListener('click', event => {
-               this.setState({ rune: e.innerHTML })
-            })
-        })
+        inputRune.value = this.state.rune
     }
 
     render() {
+        let i = 0;
         if (typeof this.state.puits === 'number') {
         return (
         <div>
@@ -61,8 +66,8 @@ class Puits extends Component {
             <input onKeyUp={this.RuneKeyUp} placeholder='Rune utilisée' className='input-rune' type='text' defaultValue={this.state.rune} />
             <div className="search-runes">
                 {RunesData.map(e => {
-                    if (e.name.startsWith(this.state.rune)) {
-                        return <p onClick={this.addRuneWord}>{e.name}</p>
+                    if (e.name.includes(this.state.rune)) {
+                        return <p onClick={this.addRuneWord} key={e.id}>{e.name}</p>
                     }
                 })}
             </div>
@@ -70,14 +75,16 @@ class Puits extends Component {
             <button onClick={this.ChangePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
                 {this.state.infos.map(el => {
-                    return <h2>{el}</h2>
+                    i = i + 1
+                    return <h2 key={i}>{el}</h2>
                 })}
             </div>
         </div>
         )
         } else {
             return <div>
-                <input onKeyPress={this.keyPressedPuits} placeholder='Votre puits' className='input-puits' type='number' />
+                <input placeholder='Votre puits' className='input-puits' type='number' />
+                <button onClick={this.myPuits} className="btn">Generer mon puits!</button>
             </div>
         }
     }
