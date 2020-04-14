@@ -67,7 +67,7 @@ class Puits extends Component {
                 })}
             </div>
             <input onKeyUp={this.TimesKeyUp} className='input-times' type='number' defaultValue="1" placeholder='exemple: 1' />
-            <button onClick={this.ChangePuits}>Calculer mon puits!</button>
+            <button onClick={this.ChangePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
                 {this.state.infos.map(el => {
                     return <h2>{el}</h2>
