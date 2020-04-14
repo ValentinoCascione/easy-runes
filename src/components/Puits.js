@@ -22,7 +22,6 @@ class Puits extends Component {
         const searchRunes = document.querySelector('.search-runes')
         const inputRune = document.querySelector('.input-rune')
         this.setState({ rune: inputRune.value.toLowerCase() })
-        console.log(inputRune.value)
         if (inputRune.value === '') {
             searchRunes.style.display = 'none'
         } else {
@@ -74,7 +73,7 @@ class Puits extends Component {
             <input onKeyUp={this.TimesKeyUp} className='input-times' type='number' defaultValue="1" placeholder='exemple: 1' />
             <button onClick={this.ChangePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
-                {this.state.infos.map(el => {
+                {this.state.infos.reverse().map(el => {
                     i = i + 1
                     return <h2 key={i}>{el}</h2>
                 })}

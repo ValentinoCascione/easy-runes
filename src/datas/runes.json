@@ -8,5 +8,10 @@
         "name": "pa fo",
         "id": 2,
         "weight": 3
-    }        
+    },
+    {
+        "name": "ra fo",
+        "id": 3,
+        "weight": 10
+    }          
 ]
