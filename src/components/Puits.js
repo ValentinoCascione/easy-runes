@@ -79,7 +79,7 @@ class Puits extends Component {
                     }
                 })}
             </div>
-            <input onKeyUp={this.TimesKeyUp} className='input-times' type='number' defaultValue="1" placeholder='exemple: 1' />
+            <input onKeyUp={this.TimesKeyUp} className='input-times' type='number' defaultValue="1" placeholder='exemple: 1' min='1' />
             <select value={this.state.success} onChange={this.changeSuccess}>
                 <option value="neutre">neutre</option>
                 <option value="critique">critique</option>
@@ -95,7 +95,7 @@ class Puits extends Component {
         )
         } else {
             return <div>
-                <input placeholder='Votre puits' className='input-puits' type='number' />
+                <input placeholder='Votre puits' className='input-puits' type='number' min='1' />
                 <button onClick={this.myPuits} className="btn">Generer mon puits!</button>
             </div>
         }
