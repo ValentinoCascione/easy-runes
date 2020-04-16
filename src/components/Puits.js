@@ -49,7 +49,6 @@ class Puits extends Component {
 
     addRuneWord = (event) => {
         const searchRunes = document.querySelector('.search-runes')
-        console.log(event.target.firstChild)
         this.setState({ 
             rune: event.target.firstChild.innerHTML.toLowerCase(),
         }, this.newInputValue )
@@ -67,6 +66,7 @@ class Puits extends Component {
 
     render() {
         let i = 0;
+        const copyArr = [...this.state.infos.reverse()]
         if (typeof this.state.puits === 'number') {
         return (
         <div>
@@ -86,7 +86,7 @@ class Puits extends Component {
             </select>
             <button onClick={this.changePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
-                {this.state.infos.reverse().map(el => {
+                {this.state.infos.map(el => {
                     i = i + 1
                     return <h2 key={i}>{el}</h2>
                 })}
