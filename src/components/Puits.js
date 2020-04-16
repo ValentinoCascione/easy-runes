@@ -42,6 +42,7 @@ class Puits extends Component {
                 this.state.infos.push(<Informations runes={this.state.rune} times={this.state.times} success={this.state.success} />)
             }
             else if (el.name === this.state.rune && this.state.times > 0 && this.state.success === 'critique') {
+                this.setState({ puits: this.state.puits })
                 this.state.infos.push(<Informations runes={this.state.rune} times={this.state.times} success={this.state.success} />)
             }
         })
