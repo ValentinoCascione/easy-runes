@@ -17,5 +17,24 @@
         "id": 3,
         "weight": 10,
         "image": "https://1.bp.blogspot.com/-vsKUtmUzyW4/UPFDmP_3y6I/AAAAAAAAAGk/Q7kM31TJ6vg/s1600/Fo.png"
-    }          
+    },
+    {
+        "name": "ine",
+        "id": 4,   
+        "weight": 1,
+        "image": "https://1.bp.blogspot.com/-pT8MFc4I7n0/UPFDmT9pIwI/AAAAAAAAAGs/0Ke-3_qXPQY/s1600/Ine.png"
+    },
+    {
+        "name": "pa ine",
+        "id": 5,
+        "weight": 3,
+        "image": "https://1.bp.blogspot.com/-pT8MFc4I7n0/UPFDmT9pIwI/AAAAAAAAAGs/0Ke-3_qXPQY/s1600/Ine.png"
+        
+    },
+    {
+        "name": "ra ine",
+        "id": 6,
+        "weight": 10,
+        "image": "https://1.bp.blogspot.com/-pT8MFc4I7n0/UPFDmT9pIwI/AAAAAAAAAGs/0Ke-3_qXPQY/s1600/Ine.png"
+    }           
 ]

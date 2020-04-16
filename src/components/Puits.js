@@ -30,9 +30,11 @@ class Puits extends Component {
         }
     }
 
-    TimesKeyUp = () => {
-        const inputTimes = document.querySelector('.input-times')
-        this.setState({ times: parseInt(inputTimes.value) })
+    TimesKeyUp = (e) => {
+        console.log(e.target.value)
+        this.setState({ times: e.target.value })
+        // const inputTimes = document.querySelector('.input-times')
+        // this.setState({ times: parseInt(inputTimes.value) })
     }
 
     changePuits = () => {
@@ -79,7 +81,7 @@ class Puits extends Component {
                     }
                 })}
             </div>
-            <input onKeyUp={this.TimesKeyUp} className='input-times' type='number' defaultValue="1" placeholder='exemple: 1' min='1' />
+            <input onChange={this.TimesKeyUp} className='input-times' type='number' value={this.state.times} placeholder='exemple: 1' min='1' />
             <select value={this.state.success} onChange={this.changeSuccess}>
                 <option value="neutre">neutre</option>
                 <option value="critique">critique</option>
