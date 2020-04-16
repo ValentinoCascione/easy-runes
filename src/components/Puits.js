@@ -86,7 +86,7 @@ class Puits extends Component {
             </select>
             <button onClick={this.changePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
-                {this.state.infos.map(el => {
+                {copyArr.map(el => {
                     i = i + 1
                     return <h2 key={i}>{el}</h2>
                 })}
