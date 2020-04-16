@@ -66,7 +66,6 @@ class Puits extends Component {
 
     render() {
         let i = 0;
-        const copyArr = [...this.state.infos.reverse()]
         if (typeof this.state.puits === 'number') {
         return (
         <div>
@@ -86,7 +85,7 @@ class Puits extends Component {
             </select>
             <button onClick={this.changePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
-                {copyArr.map(el => {
+                {this.state.infos.slice().reverse().map(el => {
                     i = i + 1
                     return <h2 key={i}>{el}</h2>
                 })}
