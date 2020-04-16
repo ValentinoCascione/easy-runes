@@ -9,6 +9,7 @@ class Puits extends Component {
             puits: null,
             rune: null,
             times: 1,
+            success: 'neutre',
             infos: []
         }
     }
@@ -34,19 +35,23 @@ class Puits extends Component {
         this.setState({ times: parseInt(inputTimes.value) })
     }
 
-    ChangePuits = () => {
+    changePuits = () => {
         RunesData.map(el => {
-            if (el.name === this.state.rune && this.state.times > 0) {
+            if (el.name === this.state.rune && this.state.times > 0 && this.state.success === 'neutre') {
                 this.setState({ puits: this.state.puits - (el.weight * this.state.times) })
-                this.state.infos.push(<Informations runes={this.state.rune} times={this.state.times}/>)
+                this.state.infos.push(<Informations runes={this.state.rune} times={this.state.times} success={this.state.success} />)
+            }
+            else if (el.name === this.state.rune && this.state.times > 0 && this.state.success === 'critique') {
+                this.state.infos.push(<Informations runes={this.state.rune} times={this.state.times} success={this.state.success} />)
             }
         })
     }
 
     addRuneWord = (event) => {
         const searchRunes = document.querySelector('.search-runes')
+        console.log(event.target.firstChild)
         this.setState({ 
-            rune: event.target.innerHTML.toLowerCase(),
+            rune: event.target.firstChild.innerHTML.toLowerCase(),
         }, this.newInputValue )
         searchRunes.style.display = 'none'
     }
@@ -56,22 +61,30 @@ class Puits extends Component {
         inputRune.value = this.state.rune
     }
 
+    changeSuccess = (event) => {
+        this.setState({ success: event.target.value })
+    }
+
     render() {
         let i = 0;
         if (typeof this.state.puits === 'number') {
         return (
         <div>
             <h1>Voici votre puits: {this.state.puits}</h1>
-            <input onKeyUp={this.RuneKeyUp} placeholder='Rune utilisée' className='input-rune' type='text' defaultValue={this.state.rune} />
+            <input onKeyUp={this.RuneKeyUp} placeholder='Rune utilisée' className='input-rune' type='text' />
             <div className="search-runes">
                 {RunesData.map(e => {
                     if (e.name.includes(this.state.rune)) {
-                        return <p onClick={this.addRuneWord} key={e.id}>{e.name}</p>
+                        return <h4 onClick={this.addRuneWord} className="search-elements" key={e.id}><p className="remove-pointer">{e.name}</p> <img className="remove-pointer" src={e.image}></img></h4>
                     }
                 })}
             </div>
             <input onKeyUp={this.TimesKeyUp} className='input-times' type='number' defaultValue="1" placeholder='exemple: 1' />
-            <button onClick={this.ChangePuits} className="btn">Calculer mon puits!</button>
+            <select value={this.state.success} onChange={this.changeSuccess}>
+                <option value="neutre">neutre</option>
+                <option value="critique">critique</option>
+            </select>
+            <button onClick={this.changePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
                 {this.state.infos.reverse().map(el => {
                     i = i + 1

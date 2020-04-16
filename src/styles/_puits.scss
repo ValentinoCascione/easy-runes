@@ -1,0 +1,27 @@
+.remove-pointer {
+    pointer-events: none;
+}
+
+.search-elements {
+    display: flex;
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    flex-direction: column;
+    transition: transform .2s;
+    
+    p {
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

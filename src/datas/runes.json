@@ -2,16 +2,20 @@
     {
         "name": "fo",
         "id": 1,   
-        "weight": 1
+        "weight": 1,
+        "image": "https://1.bp.blogspot.com/-vsKUtmUzyW4/UPFDmP_3y6I/AAAAAAAAAGk/Q7kM31TJ6vg/s1600/Fo.png"
     },
     {
         "name": "pa fo",
         "id": 2,
-        "weight": 3
+        "weight": 3,
+        "image": "https://1.bp.blogspot.com/-vsKUtmUzyW4/UPFDmP_3y6I/AAAAAAAAAGk/Q7kM31TJ6vg/s1600/Fo.png"
+        
     },
     {
         "name": "ra fo",
         "id": 3,
-        "weight": 10
+        "weight": 10,
+        "image": "https://1.bp.blogspot.com/-vsKUtmUzyW4/UPFDmP_3y6I/AAAAAAAAAGk/Q7kM31TJ6vg/s1600/Fo.png"
     }          
 ]
