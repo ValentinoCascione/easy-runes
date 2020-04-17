@@ -71,34 +71,40 @@ class Puits extends Component {
         let i = 0;
         if (typeof this.state.puits === 'number') {
         return (
-        <div>
-            <h1>Voici votre puits: {this.state.puits}</h1>
-            <input onKeyUp={this.RuneKeyUp} placeholder='Rune utilisée' className='input-rune' type='text' />
-            <div className="search-runes">
-                {RunesData.map(e => {
-                    if (e.name.includes(this.state.rune)) {
-                        return <h4 onClick={this.addRuneWord} className="search-elements" key={e.id}><p className="remove-pointer">{e.name}</p> <img className="remove-pointer" src={e.image}></img></h4>
-                    }
-                })}
+        <div className='puits-div'>
+            <h1 className='general-puits'>{this.state.puits}</h1>
+            <div className='all-secondpage'>
+                <div className='all-search-runes'>
+                    <input onKeyUp={this.RuneKeyUp} placeholder='Rune utilisée' className='input-rune' type='text' />
+                    <div className="search-runes">
+                        {RunesData.map(e => {
+                            if (e.name.includes(this.state.rune)) {
+                                return <h4 onClick={this.addRuneWord} className="search-element" key={e.id}><p className="remove-pointer">{e.name}</p> <img className="remove-pointer" src={e.image}></img></h4>
+                            }
+                        })}
+                    </div>
+                </div>
+                <input onChange={this.TimesKeyUp} className='input-times' type='number' value={this.state.times} placeholder='Exemple: 1' min='1' />
+                <select value={this.state.success} onChange={this.changeSuccess}>
+                    <option value="neutre">neutre</option>
+                    <option value="critique">critique</option>
+                </select>
             </div>
-            <input onChange={this.TimesKeyUp} className='input-times' type='number' value={this.state.times} placeholder='exemple: 1' min='1' />
-            <select value={this.state.success} onChange={this.changeSuccess}>
-                <option value="neutre">neutre</option>
-                <option value="critique">critique</option>
-            </select>
             <button onClick={this.changePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
                 {this.state.infos.slice().reverse().map(el => {
                     i = i + 1
-                    return <h2 key={i}>{el}</h2>
+                    return <h2 key={i}>- {el}</h2>
                 })}
             </div>
         </div>
         )
         } else {
-            return <div>
-                <input placeholder='Votre puits' className='input-puits' type='number' min='1' />
-                <button onClick={this.myPuits} className="btn">Generer mon puits!</button>
+            return <div className='puits-div-1'>
+                <div className='all-firstpage'>
+                    <input placeholder='Exemple: 90' className='input-puits' type='number' min='1' />
+                    <button onClick={this.myPuits}>Generer mon puits</button>
+                </div>
             </div>
         }
     }

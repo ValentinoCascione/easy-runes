@@ -1,3 +1,19 @@
 @import 'styles/config';
 @import 'styles/buttons';
 @import 'styles/puits';
+@import 'styles/header';
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #A3C2D9;
+    font-family: 'Comic Neue', cursive;
+}
+
+#root, .App {
+    height: 100%;
+}
