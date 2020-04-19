@@ -7,7 +7,6 @@
     margin: 5px;
     width: 80px;
     height: 80px;
-    border: 1px solid;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -15,8 +14,11 @@
     cursor: pointer;
     flex-direction: column;
     transition: transform .2s;
+    background: white;
     
     p {
+        font-size: 12px;
+        font-weight: bold;
         margin: 0;
         text-transform: uppercase;
     }
@@ -85,7 +87,7 @@
         .search-runes {
             display: flex;
             justify-content: center;
-            width: 260px;
+            width: 270px;
             flex-wrap: wrap;
         }
     }

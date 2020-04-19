@@ -36,5 +36,454 @@
         "id": 6,
         "weight": 10,
         "image": "https://1.bp.blogspot.com/-pT8MFc4I7n0/UPFDmT9pIwI/AAAAAAAAAGs/0Ke-3_qXPQY/s1600/Ine.png"
-    }           
+    },
+    {
+        "name": "cha",
+        "id": 7,
+        "weight": 1,
+        "image": "https://4.bp.blogspot.com/-XVH7azVv3I4/UPFDl7HzRZI/AAAAAAAAAGc/aPCROgCMp04/s1600/Cha.png"
+        
+    },
+    {
+        "name": "pa cha",
+        "id": 8,
+        "weight": 10,
+        "image": "https://4.bp.blogspot.com/-XVH7azVv3I4/UPFDl7HzRZI/AAAAAAAAAGc/aPCROgCMp04/s1600/Cha.png"
+    },
+    {
+        "name": "ra cha",
+        "id": 9,   
+        "weight": 10,
+        "image": "https://4.bp.blogspot.com/-XVH7azVv3I4/UPFDl7HzRZI/AAAAAAAAAGc/aPCROgCMp04/s1600/Cha.png"
+    },
+    {
+        "name": "age",
+        "id": 10,
+        "weight": 1,
+        "image": "https://4.bp.blogspot.com/-MyAl8omhA24/UPFDloBNXzI/AAAAAAAAAGo/uN4IL1pSvuA/s1600/Age.png"
+        
+    },
+    {
+        "name": "pa age",
+        "id": 11,
+        "weight": 3,
+        "image": "https://4.bp.blogspot.com/-MyAl8omhA24/UPFDloBNXzI/AAAAAAAAAGo/uN4IL1pSvuA/s1600/Age.png"
+    },
+    {
+        "name": "ra age",
+        "id": 12,
+        "weight": 10,
+        "image": "https://4.bp.blogspot.com/-MyAl8omhA24/UPFDloBNXzI/AAAAAAAAAGo/uN4IL1pSvuA/s1600/Age.png"
+        
+    },
+    {
+        "name": "vi",
+        "id": 13,
+        "weight": 1,
+        "image": "https://1.bp.blogspot.com/-6erznUhbzFY/UPFDnPcib9I/AAAAAAAAAHI/YEpkK1Vi0_I/s1600/Vi.png"
+        
+    },
+    {
+        "name": "pa vi",
+        "id": 14,
+        "weight": 3,
+        "image": "https://1.bp.blogspot.com/-6erznUhbzFY/UPFDnPcib9I/AAAAAAAAAHI/YEpkK1Vi0_I/s1600/Vi.png"
+    },
+    {
+        "name": "ra vi",
+        "id": 15,
+        "weight": 10,
+        "image": "https://1.bp.blogspot.com/-6erznUhbzFY/UPFDnPcib9I/AAAAAAAAAHI/YEpkK1Vi0_I/s1600/Vi.png"
+        
+    },
+    {
+        "name": "sa",
+        "id": 16,
+        "weight": 3,
+        "image": "https://1.bp.blogspot.com/-WBmuP2bJLhk/UPFDm6vazFI/AAAAAAAAAG8/irYblhOMR_M/s1600/Sa.png"
+        
+    },
+    {
+        "name": "pa sa",
+        "id": 17,
+        "weight": 9,
+        "image": "https://1.bp.blogspot.com/-WBmuP2bJLhk/UPFDm6vazFI/AAAAAAAAAG8/irYblhOMR_M/s1600/Sa.png"
+    },
+    {
+        "name": "ra sa",
+        "id": 18,
+        "weight": 15,
+        "image": "https://1.bp.blogspot.com/-WBmuP2bJLhk/UPFDm6vazFI/AAAAAAAAAG8/irYblhOMR_M/s1600/Sa.png"
+        
+    },
+    {
+        "name": "pui",
+        "id": 19,
+        "weight": 2,
+        "image": "https://3.bp.blogspot.com/-QQ7ajS08VvA/UPFDl8VfKfI/AAAAAAAAAGg/bS9IBx2oNyM/s1600/Do+Per.png"
+        
+    },
+    {
+        "name": "pa pui",
+        "id": 20,
+        "weight": 6,
+        "image": "https://3.bp.blogspot.com/-QQ7ajS08VvA/UPFDl8VfKfI/AAAAAAAAAGg/bS9IBx2oNyM/s1600/Do+Per.png"
+    },
+    {
+        "name": "ra pui",
+        "id": 21,
+        "weight": 20,
+        "image": "https://3.bp.blogspot.com/-QQ7ajS08VvA/UPFDl8VfKfI/AAAAAAAAAGg/bS9IBx2oNyM/s1600/Do+Per.png"
+        
+    },
+    {
+        "name": "do cri",
+        "id": 22,
+        "weight": 5,
+        "image": "https://3.bp.blogspot.com/-zi0ubBGHwrk/WT17KGe3P5I/AAAAAAAAAaA/4YK9DMgCR5oC57fLhKdemHDYC1YA3JFrwCLcB/s1600/docrii.png"
+    },
+    {
+        "name": "pa do cri",
+        "id": 23,
+        "weight": 15,
+        "image": "https://3.bp.blogspot.com/-zi0ubBGHwrk/WT17KGe3P5I/AAAAAAAAAaA/4YK9DMgCR5oC57fLhKdemHDYC1YA3JFrwCLcB/s1600/docrii.png"
+        
+    },
+    {
+        "name": "do pou",
+        "id": 24,
+        "weight": 5,
+        "image": "https://4.bp.blogspot.com/-7EMQVUsV4MI/UPFeD6k3ElI/AAAAAAAAAIE/U54F1hP2Q0A/s1600/Do+Pou.png"
+    },
+    {
+        "name": "pa do pou",
+        "id": 25,
+        "weight": 15,
+        "image": "https://4.bp.blogspot.com/-7EMQVUsV4MI/UPFeD6k3ElI/AAAAAAAAAIE/U54F1hP2Q0A/s1600/Do+Pou.png"
+        
+    },
+    {
+        "name": "do eau",
+        "id": 26,
+        "weight": 5,
+        "image": "https://1.bp.blogspot.com/-x4YGu5etPhw/UPFerq9CueI/AAAAAAAAAIM/CXElnWMTGIg/s1600/Do+Eau.png"
+    },
+    {
+        "name": "pa do eau",
+        "id": 27,
+        "weight": 15,
+        "image": "https://1.bp.blogspot.com/-x4YGu5etPhw/UPFerq9CueI/AAAAAAAAAIM/CXElnWMTGIg/s1600/Do+Eau.png"
+        
+    },
+    {
+        "name": "do air",
+        "id": 28,
+        "weight": 5,
+        "image": "https://2.bp.blogspot.com/-smGJ0LP8pL4/UPFerpmaJnI/AAAAAAAAAIQ/eHE8HQB-PVE/s1600/Do+Air.png"
+    },
+    {
+        "name": "pa do air",
+        "id": 29,
+        "weight": 15,
+        "image": "https://2.bp.blogspot.com/-smGJ0LP8pL4/UPFerpmaJnI/AAAAAAAAAIQ/eHE8HQB-PVE/s1600/Do+Air.png"
+        
+    },
+    {
+        "name": "do neutre",
+        "id": 30,
+        "weight": 5,
+        "image": "https://1.bp.blogspot.com/-lZsjvp3iw2M/UPFer3MfLBI/AAAAAAAAAIU/ZcEtF7WeIPM/s1600/Do+Neutre.png"
+    },
+    {
+        "name": "pa do neutre",
+        "id": 31,
+        "weight": 15,
+        "image": "https://1.bp.blogspot.com/-lZsjvp3iw2M/UPFer3MfLBI/AAAAAAAAAIU/ZcEtF7WeIPM/s1600/Do+Neutre.png"
+        
+    },
+    {
+        "name": "do terre",
+        "id": 32,
+        "weight": 5,
+        "image": "https://1.bp.blogspot.com/-_pK9cGT5TtY/UPFesDyQtOI/AAAAAAAAAIY/yWBf8joz5Ag/s1600/Do+Terre.png"
+    },
+    {
+        "name": "pa do terre",
+        "id": 33,
+        "weight": 15,
+        "image": "https://1.bp.blogspot.com/-_pK9cGT5TtY/UPFesDyQtOI/AAAAAAAAAIY/yWBf8joz5Ag/s1600/Do+Terre.png"
+        
+    },
+    {
+        "name": "do feu",
+        "id": 34,
+        "weight": 5,
+        "image": "https://2.bp.blogspot.com/-zw11KuugiRs/UPFerjF1DbI/AAAAAAAAAIg/rKJ41WslGgQ/s1600/Do+Feu.png"
+    },
+    {
+        "name": "pa do feu",
+        "id": 35,
+        "weight": 15,
+        "image": "https://2.bp.blogspot.com/-zw11KuugiRs/UPFerjF1DbI/AAAAAAAAAIg/rKJ41WslGgQ/s1600/Do+Feu.png"
+        
+    },
+    {
+        "name": "do",
+        "id": 36,
+        "weight": 20,
+        "image": "https://4.bp.blogspot.com/-ikkTrCjxw5U/UPFfckegK7I/AAAAAAAAAI0/CzLIUim7X9E/s1600/Do.png"
+        
+    },
+    {
+        "name": "ré cri",
+        "id": 37,
+        "weight": 2,
+        "image": "https://2.bp.blogspot.com/-EX1WJNVSi0Y/UPFgubf8wQI/AAAAAAAAAJI/WHcvyYbOaYE/s1600/R%C3%A9+Cri.png"
+        
+    },
+    {
+        "name": "ré pou",
+        "id": 38,
+        "weight": 2,
+        "image": "https://4.bp.blogspot.com/-gSC8zjB_PfM/UPFkCoodiEI/AAAAAAAAAJ4/BmjdNrTTAKs/s1600/R%C3%A9+Pou.png"
+        
+    },
+    {
+        "name": "ré pa",
+        "id": 39,
+        "weight": 7,
+        "image": "https://3.bp.blogspot.com/-5zmmIigehco/UPFhtcAgxfI/AAAAAAAAAJU/CtKtjfPjcHM/s1600/R%C3%A9+Pa.png"
+        
+    },
+    {
+        "name": "ré pm",
+        "id": 40,
+        "weight": 7,
+        "image": "https://4.bp.blogspot.com/-8eHAZbL6KrA/UPFj3zk_SuI/AAAAAAAAAJw/fhYQLRnYlJU/s1600/R%C3%A9+Pme.png"
+        
+    },
+    {
+        "name": "ré air",
+        "id": 41,
+        "weight": 2,
+        "image": "https://1.bp.blogspot.com/-p_TzhbiQZSk/UPFkM42xQvI/AAAAAAAAAKA/rXUkRa5fu5A/s1600/R%C3%A9+Air.png"
+        
+    },
+    {
+        "name": "ré feu",
+        "id": 42,
+        "weight": 2,
+        "image": "https://2.bp.blogspot.com/-X_ouC67HUIk/UPFkM-P6PGI/AAAAAAAAAKI/zYYw-T6Ven0/s1600/R%C3%A9+Feu.png"
+        
+    },
+    {
+        "name": "ré neutre",
+        "id": 43,
+        "weight": 2,
+        "image": "https://4.bp.blogspot.com/-uAx-azboYTQ/UPFkNF-qStI/AAAAAAAAAKM/lZUEcjAmNnM/s1600/R%C3%A9+Neutre.png"
+        
+    },
+    {
+        "name": "ré eau",
+        "id": 44,
+        "weight": 2,
+        "image": "https://3.bp.blogspot.com/-RGPnEd7mYSI/UPFkMyVriZI/AAAAAAAAAKE/-7XyBPdAK3o/s1600/R%C3%A9+Eau.png"
+        
+    },
+    {
+        "name": "ré terre",
+        "id": 45,
+        "weight": 2,
+        "image": "https://4.bp.blogspot.com/-fnLRKqvfdkA/UPFkNf5mHmI/AAAAAAAAAKQ/76O3hyo2O8M/s1600/R%C3%A9+Terre.png"
+        
+    },
+    {
+        "name": "ré per air",
+        "id": 46,
+        "weight": 6,
+        "image": "https://2.bp.blogspot.com/-Q3Tq4s4tYcI/UPFkmtz6OeI/AAAAAAAAAKw/g_Dg0PPaOco/s1600/R%C3%A9+Per+Air.png"
+        
+    },
+    {
+        "name": "ré per feu",
+        "id": 47,
+        "weight": 6,
+        "image": "https://1.bp.blogspot.com/-LuL1qq0C4Dk/UPFkmt2T40I/AAAAAAAAAKs/wJcOU6flLUA/s1600/R%C3%A9+Per+Feu.png"
+        
+    },
+    {
+        "name": "ré per neutre",
+        "id": 48,
+        "weight": 6,
+        "image": "https://4.bp.blogspot.com/-w66E3UVI3Lg/UPFknPNN1bI/AAAAAAAAAK0/Tz3WqxCqDnY/s1600/R%C3%A9+Per+Neutre.png"
+        
+    },
+    {
+        "name": "ré per eau",
+        "id": 49,
+        "weight": 6,
+        "image": "https://4.bp.blogspot.com/-d4CHhOmxFBM/UPFkmrUzzuI/AAAAAAAAAKo/PTrr5UxAsgw/s1600/R%C3%A9+Per+Eau.png"
+        
+    },
+    {
+        "name": "ré per terre",
+        "id": 50,
+        "weight": 6,
+        "image": "https://3.bp.blogspot.com/-ULSOm7udgvw/UPFkngvCXPI/AAAAAAAAAK8/Yrx-_h5wZms/s1600/R%C3%A9+Per+Terre.png"
+        
+    },
+    {
+        "name": "do ren",
+        "id": 51,
+        "weight": 10,
+        "image": "https://1.bp.blogspot.com/-ONti6OgD9IQ/UPFs986vTPI/AAAAAAAAALc/A4Ez3_BwOvY/s1600/Do+Ren.png"
+        
+    },
+    {
+        "name": "cri",
+        "id": 52,
+        "weight": 10,
+        "image": "https://1.bp.blogspot.com/-mNtG0zq3Gr8/UPFs9555-SI/AAAAAAAAALg/o5JgJLdGV6I/s1600/Cri.png"
+        
+    },
+    {
+        "name": "de chasse",
+        "id": 53,
+        "weight": 5,
+        "image": "https://1.bp.blogspot.com/-cgevKMuZyA0/UPFs98LoaXI/AAAAAAAAALk/PFdoCGRcRxM/s1600/Chasse.png"
+        
+    },
+    {
+        "name": "ga pme",
+        "id": 54,
+        "weight": 90,
+        "image": "https://2.bp.blogspot.com/-a4hga97kdjg/UPFs-mECh5I/AAAAAAAAALs/D51q8NE5MKw/s1600/Ga+Pme.png"
+        
+    },
+    {
+        "name": "ga pa",
+        "id": 55,
+        "weight": 100,
+        "image": "https://4.bp.blogspot.com/-Bgenj5zM1Iw/UPFs-cja6xI/AAAAAAAAALw/6apabXqhHNQ/s1600/Ga+Pa.png"
+        
+    },
+    {
+        "name": "invo",
+        "id": 56,
+        "weight": 30,
+        "image": "https://1.bp.blogspot.com/-y2PvXQss0t8/UPFs_LRAaCI/AAAAAAAAAL8/gqqd2zGZYKU/s1600/Invo.png"
+        
+    },
+    {
+        "name": "pi per",
+        "id": 57,
+        "weight": 2,
+        "image": "https://1.bp.blogspot.com/-2WtWo6n0gQM/UPFs_D62nSI/AAAAAAAAAMA/efXd19a4Alk/s1600/Pi+Per.png"
+        
+    },
+    {
+        "name": "pa pi per",
+        "id": 58,
+        "weight": 6,
+        "image": "https://1.bp.blogspot.com/-2WtWo6n0gQM/UPFs_D62nSI/AAAAAAAAAMA/efXd19a4Alk/s1600/Pi+Per.png"
+        
+    },
+    {
+        "name": "ra pi per",
+        "id": 59,
+        "weight": 20,
+        "image": "https://1.bp.blogspot.com/-2WtWo6n0gQM/UPFs_D62nSI/AAAAAAAAAMA/efXd19a4Alk/s1600/Pi+Per.png"
+        
+    },
+    {
+        "name": "pi",
+        "id": 60,
+        "weight": 5,
+        "image": "https://4.bp.blogspot.com/-AWKkBYAPqow/UPFs_FuAu2I/AAAAAAAAAMI/zTur2CVDqdY/s1600/Pi.png"
+        
+    },
+    {
+        "name": "pa pi",
+        "id": 61,
+        "weight": 15,
+        "image": "https://4.bp.blogspot.com/-AWKkBYAPqow/UPFs_FuAu2I/AAAAAAAAAMI/zTur2CVDqdY/s1600/Pi.png"
+        
+    },
+    {
+        "name": "prospe",
+        "id": 62,
+        "weight": 3,
+        "image": "https://4.bp.blogspot.com/-wk6gfHad4x8/UPFs_4WUEHI/AAAAAAAAAMY/rOrwIRm113s/s1600/Prospe.png"
+        
+    },
+    {
+        "name": "pa prospe",
+        "id": 63,
+        "weight": 9,
+        "image": "https://4.bp.blogspot.com/-wk6gfHad4x8/UPFs_4WUEHI/AAAAAAAAAMY/rOrwIRm113s/s1600/Prospe.png"
+        
+    },
+    {
+        "name": "pod",
+        "id": 64,
+        "weight": 2.5,
+        "image": "https://1.bp.blogspot.com/-4n2WAu39Y48/UPFs_75lbcI/AAAAAAAAAMk/HsBh43LLFqE/s1600/Pod.png"
+        
+    },
+    {
+        "name": "pa pod",
+        "id": 65,
+        "weight": 7.5,
+        "image": "https://1.bp.blogspot.com/-4n2WAu39Y48/UPFs_75lbcI/AAAAAAAAAMk/HsBh43LLFqE/s1600/Pod.png"
+        
+    },
+    {
+        "name": "ra pod",
+        "id": 66,
+        "weight": 25,
+        "image": "https://1.bp.blogspot.com/-4n2WAu39Y48/UPFs_75lbcI/AAAAAAAAAMk/HsBh43LLFqE/s1600/Pod.png"
+        
+    },
+    {
+        "name": "so",
+        "id": 67,
+        "weight": 10,
+        "image": "https://1.bp.blogspot.com/-LraZWqoYjnk/UPFtBBtteVI/AAAAAAAAAM4/KpvJdc3RdsA/s1600/So.png"
+        
+    },
+    {
+        "name": "po",
+        "id": 68,
+        "weight": 51,
+        "image": "https://4.bp.blogspot.com/-R9WJQUD2eoo/UPFtBWwGeqI/AAAAAAAAANA/M8nDih7rLPo/s1600/Po.png"
+        
+    },
+    {
+        "name": "ret pa",
+        "id": 69,
+        "weight": 7,
+        "image": "https://4.bp.blogspot.com/-fyeQZNUPMsA/UPFtAg-qPYI/AAAAAAAAAMs/jjqgwTEZxoo/s1600/Ret+Pa.png"
+        
+    },
+    {
+        "name": "fui",
+        "id": 70,
+        "weight": 4,
+        "image": "https://1.bp.blogspot.com/-IPTITM3YQV4/UPFs-fGA8OI/AAAAAAAAALo/n0uFM1Ddhj0/s1600/Fui.png"
+        
+    },
+    {
+        "name": "ret pme",
+        "id": 71,
+        "weight": 7,
+        "image": "https://1.bp.blogspot.com/-6JQkJdnPgA8/UPFtA2cZ2aI/AAAAAAAAANE/tABmXwri1bc/s1600/Ret+Pme.png"
+        
+    },
+    {
+        "name": "tac",
+        "id": 72,
+        "weight": 4,
+        "image": "https://2.bp.blogspot.com/-0rty1f0SwZE/UPFtBiJsErI/AAAAAAAAANI/Uad1inH2vh4/s1600/Tac.png"
+        
+    }            
 ]

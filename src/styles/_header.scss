@@ -10,4 +10,12 @@ header {
         text-transform: uppercase;
         font-weight: bold;
     }
+
+    a {
+        outline: none;
+        list-style-type: none;
+        text-decoration: none;
+        color: #00acee;
+        font-size: 20px;
+    }
 }

@@ -10,7 +10,7 @@ class Header extends Component {
         return (
             <header>
                 <p className='logo'>Easy <br></br> Runes.</p>
-                <p>Calculez facilement votre puits</p>
+                <p>Bug repéré? <br></br><a href="https://twitter.com/jeune_pasquale" target="_blank">@jeune_pasquale</a> sur Twitter</p>
                 <button onClick={this.reload} >Recommencer</button>
             </header>
         )
