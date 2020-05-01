@@ -10,7 +10,8 @@ class Puits extends Component {
             rune: null,
             times: 1,
             success: 'neutre',
-            infos: []
+            infos: [],
+            used: []
         }
     }
 
@@ -33,8 +34,6 @@ class Puits extends Component {
     TimesKeyUp = (e) => {
         console.log(e.target.value)
         this.setState({ times: e.target.value })
-        // const inputTimes = document.querySelector('.input-times')
-        // this.setState({ times: parseInt(inputTimes.value) })
     }
 
     changePuits = () => {
@@ -42,10 +41,14 @@ class Puits extends Component {
             if (el.name === this.state.rune && this.state.times > 0 && this.state.success === 'neutre') {
                 this.setState({ puits: this.state.puits - (el.weight * this.state.times) })
                 this.state.infos.push(<Informations runes={this.state.rune} times={this.state.times} success={this.state.success} />)
+                if (this.state.used.includes(el.name) === false) {
+                    this.state.used.push(el.name)
+                }
             }
             else if (el.name === this.state.rune && this.state.times > 0 && this.state.success === 'critique') {
                 this.setState({ puits: this.state.puits })
                 this.state.infos.push(<Informations runes={this.state.rune} times={this.state.times} success={this.state.success} />)
+                this.state.used.push(el.name)
             }
         })
     }
@@ -67,12 +70,21 @@ class Puits extends Component {
         this.setState({ success: event.target.value })
     }
 
+    addUsed = (event) => {
+        this.setState({ 
+            rune: event.target.innerHTML.toLowerCase(),
+        }, this.newInputValue )
+    }
+
     render() {
         let i = 0;
         if (typeof this.state.puits === 'number') {
         return (
         <div className='puits-div'>
             <h1 className='general-puits'>{this.state.puits}</h1>
+            <div className="runes-used">{this.state.used.map(e => {
+                return <p onClick={this.addUsed}>{e}</p>
+            })}</div>
             <div className='all-secondpage'>
                 <div className='all-search-runes'>
                     <input onKeyUp={this.RuneKeyUp} placeholder='Rune utilisée' className='input-rune' type='text' />
