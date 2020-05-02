@@ -74,20 +74,55 @@ class Puits extends Component {
         this.setState({ 
             rune: event.target.innerHTML.toLowerCase(),
         }, this.newInputValue )
+        const runesUsed = document.querySelector('.runes-used')
+        const searchRunes = document.querySelector('.search-runes')
+        runesUsed.style.display = 'none'
+        searchRunes.style.display = 'none'
+    }
+
+    hideRunesUsed = () => {
+        const runesUsed = document.querySelector('.runes-used')
+        runesUsed.style.display = 'none'
+    }
+
+    hideWithEsc = (e) => {
+        const runesUsed = document.querySelector('.runes-used')
+        if (e.keyCode === 27) {
+            runesUsed.style.display = 'none'
+        }
+    }
+
+    showRunesUsed = () => {
+        const runesUsed = document.querySelector('.runes-used')
+        if (this.state.used.length > 0) {
+            runesUsed.style.display = 'flex'
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener('keydown', this.hideWithEsc)
     }
 
     render() {
         let i = 0;
         if (typeof this.state.puits === 'number') {
         return (
-        <div className='puits-div'>
+        <div className='puits-div' onKeyDown={this.test}>
             <h1 className='general-puits'>{this.state.puits}</h1>
-            <div className="runes-used">{this.state.used.map(e => {
-                return <p onClick={this.addUsed}>{e}</p>
-            })}</div>
+            <button onClick={this.showRunesUsed} className="show-runes-used">Runes utilisées</button>
+            <div className="runes-used">
+                <button className="btn-used" onClick={this.hideRunesUsed}>X</button>
+                {this.state.used.map(e => {
+                 i = i + 1   
+                return <p onClick={this.addUsed} key={i}>{e}</p>
+            })}
+            </div>
             <div className='all-secondpage'>
                 <div className='all-search-runes'>
-                    <input onKeyUp={this.RuneKeyUp} placeholder='Rune utilisée' className='input-rune' type='text' />
+                    <div className="firstpage-flex width-runes">
+                        <p className="before-input">Rune&nbsp;</p>
+                        <input onKeyUp={this.RuneKeyUp} className='input-rune' type='text' />
+                    </div>
                     <div className="search-runes">
                         {RunesData.map(e => {
                             if (e.name.includes(this.state.rune)) {
@@ -96,26 +131,40 @@ class Puits extends Component {
                         })}
                     </div>
                 </div>
-                <input onChange={this.TimesKeyUp} className='input-times' type='number' value={this.state.times} placeholder='Exemple: 1' min='1' />
-                <select value={this.state.success} onChange={this.changeSuccess}>
-                    <option value="neutre">neutre</option>
-                    <option value="critique">critique</option>
-                </select>
+                <div className="firstpage-flex">
+                    <input onChange={this.TimesKeyUp} className='input-times' type='number' value={this.state.times} min='1' />
+                    <p className="after-input">&nbsp;fois</p>
+                </div>
+                <div className="firstpage-flex">
+                    <p className="before-input">Succès&nbsp;</p>
+                    <select value={this.state.success} onChange={this.changeSuccess} className="select-success">
+                        <option value="neutre">neutre</option>
+                        <option value="critique">critique</option>
+                    </select>
+                </div>
+                <button onClick={this.changePuits} className="btn btn-final">Calculer</button>
             </div>
-            <button onClick={this.changePuits} className="btn">Calculer mon puits!</button>
             <div className='informations'>
-                {this.state.infos.slice().reverse().map(el => {
-                    i = i + 1
-                    return <h2 key={i}>- {el}</h2>
-                })}
+                <p className="historique">Historique</p>
+                <div className="inside-infos">
+                    {(this.state.infos == 0) ? <p className="empty-historique">Votre historique est vide</p> : 
+                    this.state.infos.slice().reverse().map(el => {
+                        i = i + 1
+                        return <h2 key={i}>- {el}</h2>
+                    })}
+                    
+                </div>
             </div>
         </div>
         )
         } else {
             return <div className='puits-div-1'>
                 <div className='all-firstpage'>
-                    <input placeholder='Exemple: 90' className='input-puits' type='number' min='1' />
-                    <button onClick={this.myPuits}>Generer mon puits</button>
+                    <div className="firstpage-flex">
+                        <p className="write-puits">Ecrivez votre puits →&nbsp;</p>
+                        <input className='input-puits' type='number' min='1' />
+                    </div>
+                    <button onClick={this.myPuits} className="btn-firstpage">Generer</button>
                 </div>
             </div>
         }

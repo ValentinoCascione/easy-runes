@@ -1,5 +1,5 @@
 button {
-    background: linear-gradient(to left, #2A1257, #7d8dd6);
+    background: linear-gradient(to left, #2A1257, #23748F);
     height: auto;
     width: auto;
     padding: 10px;
@@ -16,6 +16,7 @@ button {
     font-family: 'Comic Neue', cursive;
     transition: transform .2s;
     box-shadow: 5px 4px 10px black;
+    letter-spacing: 1px;
 
     &:focus {
         outline: none;
@@ -36,16 +37,17 @@ input, select {
     width: auto;
     font-size: 25px;
     align-items: center;
-    text-align: center;
     font-family: 'Comic Neue', cursive;
     color: black;
+    box-sizing: border-box;
+    letter-spacing: 1px;
 
     &:focus {
         outline: none;
     }
 
     &::placeholder {
-        color: black;
+        color: grey;
     }
 
     option {
@@ -62,4 +64,47 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.input-puits {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #F3FCFF;
+    width: 100px;
+}
+
+.btn-firstpage {
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.input-rune {
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #F3FCFF;
+    padding-left: 10px;
+    width: 180px;
+}
+
+.input-times {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #F3FCFF;
+    width: 50px;
+}
+
+.select-success {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #F3FCFF;
+}
+
+.btn-final {
+    position: absolute; top: 150px; right: 30%;
 }
