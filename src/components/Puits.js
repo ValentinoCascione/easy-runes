@@ -17,7 +17,9 @@ class Puits extends Component {
 
     myPuits = () => {
         const inputPuits = document.querySelector('.input-puits')
-        this.setState({ puits: parseInt(inputPuits.value) })
+        if (parseInt(inputPuits.value) > 0) {
+            this.setState({ puits: parseInt(inputPuits.value) })
+        }
     }
 
     RuneKeyUp = () => {
@@ -99,8 +101,43 @@ class Puits extends Component {
         }
     }
 
-    componentDidMount() {
+    minZero = () => {
+        if (this.state.puits < 0) {
+            this.setState({ puits: 0 })
+        }
+    }
+
+    puitsEqZero = () => {
+        const restartPuitsOutline = document.querySelector('.restart-puits-outline')
+        const restartPuits = document.querySelector('.restart-puits')
+        if (this.state.puits === 0) {
+            restartPuits.style.position = 'absolute'
+            restartPuits.style.top = '-200px'
+            setTimeout(() => { restartPuitsOutline.style.width = '230px' }, 300);
+        }
+    }
+
+    newPuits = () => {
+        const restartPuitsOutline = document.querySelector('.restart-puits-outline')
+        const restartPuits = document.querySelector('.restart-puits')
+        const newInputPuits = document.querySelector('.new-input-puits')
+        if (newInputPuits.value > 0) {
+            this.setState({ 
+                puits: parseInt(newInputPuits.value),
+                infos: []
+            })
+            newInputPuits.value = ''
+            restartPuits.style.position = 'absolute'
+            restartPuits.style.top = '-450px'
+            setTimeout(() => { restartPuitsOutline.style.width = '80px' }, 300);
+        }
+
+    }
+
+    componentDidUpdate() {
         window.addEventListener('keydown', this.hideWithEsc)
+        this.minZero()
+        this.puitsEqZero()
     }
 
     render() {
@@ -112,10 +149,21 @@ class Puits extends Component {
             <button onClick={this.showRunesUsed} className="show-runes-used">Runes utilisées</button>
             <div className="runes-used">
                 <button className="btn-used" onClick={this.hideRunesUsed}>X</button>
+                <div className="p-used">
                 {this.state.used.map(e => {
-                 i = i + 1   
-                return <p onClick={this.addUsed} key={i}>{e}</p>
-            })}
+                    i = i + 1   
+                    return <p onClick={this.addUsed} key={i}>{e}</p>
+                })}
+                </div>
+            </div>
+            <div className="restart-puits">
+                <p className="restart-puits-title">Vous n'avez plus de reliquat</p>
+                <div className="restart-puits-outline"></div>
+                <div className="firstpage-flex">
+                    <p className="write-puits">Réajuster mon puits →&nbsp;</p>
+                    <input type='number' className="new-input-puits" />
+                </div>
+                <button onClick={this.newPuits} className="maj-puits">Mettre à jour</button>
             </div>
             <div className='all-secondpage'>
                 <div className='all-search-runes'>

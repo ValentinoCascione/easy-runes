@@ -90,12 +90,12 @@ input[type=number] {
     width: 180px;
 }
 
-.input-times {
+.input-times, .new-input-puits {
     text-align: center;
     border: 2px solid black;
     border-radius: 5px;
     background: #F3FCFF;
-    width: 50px;
+    width: 60px;
 }
 
 .select-success {
@@ -107,4 +107,8 @@ input[type=number] {
 
 .btn-final {
     position: absolute; top: 150px; right: 30%;
+}
+
+.maj-puits {
+    margin: 10px;
 }
