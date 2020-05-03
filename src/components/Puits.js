@@ -212,7 +212,7 @@ class Puits extends Component {
                         <p className="write-puits">Ecrivez votre puits →&nbsp;</p>
                         <input className='input-puits' type='number' min='1' />
                     </div>
-                    <button onClick={this.myPuits} className="btn-firstpage">Generer</button>
+                    <button onClick={this.myPuits} className="btn-firstpage">Générer</button>
                 </div>
             </div>
         }

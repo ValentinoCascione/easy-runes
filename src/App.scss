@@ -4,6 +4,7 @@
 @import 'styles/header';
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 body, html {
     margin: 0;
@@ -11,7 +12,9 @@ body, html {
     height: 100%;
     width: 100%;
     background: lightblue;
-    font-family: 'Comic Neue', cursive;
+    // font-family: 'Comic Neue', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
     letter-spacing: 2px;
 }
 

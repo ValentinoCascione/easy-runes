@@ -13,7 +13,9 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Comic Neue', cursive;
+    // font-family: 'Comic Neue', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
     transition: transform .2s;
     box-shadow: 5px 4px 10px black;
     letter-spacing: 1px;
@@ -37,7 +39,9 @@ input, select {
     width: auto;
     font-size: 25px;
     align-items: center;
-    font-family: 'Comic Neue', cursive;
+    // font-family: 'Comic Neue', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
     color: black;
     box-sizing: border-box;
     letter-spacing: 1px;
